@@ -3,4 +3,4 @@ AcknowledgementBlocker is a browser extension designed to enhance browsing exper
 
 This extension works with all chromium based browsers such as chrome, edge and brave.
 
-This chrome extension is licenced under the MIT licence
+This extension is licenced under the MIT licence.
