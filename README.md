@@ -1,4 +1,4 @@
 # AcknowledgementBlocker
-Chrome extension that removes the propaganda aboriginal acknowledgement sections from websites by using regex to find the typical propaganda strings and deleting them.
+AcknowledgementBlocker is a Chrome extension designed to enhance browsing experiences by removing propaganda aboriginal acknowledgement sections from websites. It achieves this by utilizing regular expressions to identify and delete these sections, ensuring a cleaner and more focused browsing environment.
 
-This extension is licenced under the MIT licence
+This chrome extension is licenced under the MIT licence
