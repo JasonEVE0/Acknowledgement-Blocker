@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Acknowledgement Blocker",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "Removes aboriginal acknowledgement propaganda",
   "permissions": ["activeTab"],
   "content_scripts": [
