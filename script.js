@@ -1,8 +1,13 @@
-let timer = 0;
+let bigw_timer = 0;
 let bigw_interval;
 
 if (window.location.href.includes("bigw.com.au")){
     bigw_interval = setInterval(remove_ack_bigw, 10);
+}
+
+// gmail is a single page application (SPA) so the removal process needs to run continuously.
+if (window.location.href.includes("mail.google.com")){
+    setInterval(remove_ack_spans, 100);
 }
 
 window.addEventListener("load", remove_ack_paragraphs);
@@ -13,10 +18,24 @@ function remove_ack_bigw() {
         if (element) {
             element.remove();
         }
-        timer += 10;
-        if (timer >= 500){
+        bigw_timer += 10;
+        if (bigw_timer >= 1000){
             clearInterval(bigw_interval);
         }
+}
+
+function remove_ack_spans() {
+    const elements = document.querySelectorAll('span');
+
+    elements.forEach(element => {
+        if (element.textContent.toLowerCase().includes("traditional custodians") || element.textContent.toLowerCase().includes("traditional owners")) {
+            if (element.parentElement != null) {
+                element.parentElement.style.visibility = "hidden";
+            } else {
+                element.style.visibility = "hidden";
+            }
+        }
+    });
 }
 
 // remove acknowledgements in general cases
