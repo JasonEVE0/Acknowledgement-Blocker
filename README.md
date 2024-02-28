@@ -10,3 +10,6 @@ Acknowledgement Blocker is a browser extension designed to enhance browsing expe
 * Download the repository and unzip it
 * Go to the extensions page in your browser which is accessed from the top right corner settings
 * Click 'load unpacked extension' and select the folder you downloaded
+
+## Contributions
+We welcome and encourage contributions from the community to improve this project. Feel free to fork the repository and submit pull requests with your contributions.
